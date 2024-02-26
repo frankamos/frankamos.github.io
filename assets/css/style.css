@@ -335,6 +335,131 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.single-about-img */
 
 /*-------------------------------------
+        7. publication
+-------------------------------------*/
+.publication {
+    padding: 25px 0 50px;
+    border-top: 0.5px solid #e5ebf2;
+}
+.publication-content {padding-top: 50px;}
+.single-timeline-box {margin-bottom: 36px;}
+
+/*publication-time*/
+.publication-time {
+    position: relative;
+}
+.header-txt a {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-transform: capitalize;
+    color: #fff;
+    background: #b636ff;
+    border:1px solid #b636ff;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    -webkit-transition: 0.3s linear; 
+    -moz-transition: 0.3s linear; 
+    -ms-transition: 0.3s linear; 
+    -o-transition: 0.3s linear; 
+    transition: 0.3s linear;
+}
+.header-txt a:hover{ box-shadow: 0 5px 15px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
+
+.publication-link-doi-highlight {
+  background-color: #d92cf9; /* Example light blue color */
+  padding: 0.5px 2px; /* Adjust padding as needed */
+  border-radius: 1px; /* Add rounded corners */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set link text color */
+  display: inline-block; /* Allow text wrapping within the box */
+  text-align: center; /* Horizontally center the text within the box */
+}
+
+.single-publication:hover .publication-icon-name,.single-publication:hover .publication-txt a>i{color: #fff;}
+.single-publication:hover .publication-border {border:transparent;}
+.publication-time h2 {
+    font-weight: 400;
+}
+.publication-time h3 {
+    font-size: 8px;
+    font-weight: 300;
+    color: #636a82;
+    margin-top: 7px;
+    text-transform: uppercase;
+}
+/*publication-time*/
+
+/*main-timeline*/
+.main-timeline{
+    position: relative;
+}
+.main-timeline:before{
+    content: "";
+    width: 2px;
+    height: 84%;
+    background: #b2c1ce;
+    position: absolute;
+    top: 1%;
+    left: 20%;
+    z-index: -1;
+}
+.main-timeline .timeline{
+    position: relative;
+}
+
+.timeline-content span>i, .publication-time span>i {
+    color: #d92cf9;
+    position: absolute;
+    font-size: 10px;
+    left: -14.5%;
+    z-index: 1;
+}
+.publication-item {
+  border: 0.5px solid #b2c1ce; /* Add a border to each box */
+  padding: 0.5rem; /* Add padding inside each box */
+  margin-bottom: 0.5rem; /* Add spacing between boxes */
+}
+
+.timeline-content h4.title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.single-publication-btn:hover{
+    background: #9f00ff;
+    border: 1px solid #9f00ff;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+.timeline-content h5 {
+    color: #636a82;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 18px 0 20px;
+}
+.main-timeline .description {
+    font-size: 14px;
+    color: #999fb3;
+}
+.main-timeline .timeline-content.right{
+    float: right;
+    text-align: left;
+}
+.timeline-single-before:before {
+    content: '';
+    top: 57px;
+    left: -3px;
+    position: absolute;
+    width: 100%;
+    height:400px;
+    border-left:15px solid #fff;
+}
+
+.publication-time-responsive{display: none;}
+
+
+
+/*-------------------------------------
         5.  Education
 --------------------------------------*/
 
