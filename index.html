@@ -458,16 +458,9 @@ Currently, we cannot confidently recommend the inclusion of explicit value clari
 
 
 
-
-
-
-
-
-
 <form action="https://formspree.io/f/meqyybqp" method="POST" onsubmit="return submitMessage()">
-  <div class="row">
-<div id="message-popup" class="hidden">Message delivered!</div>
-
+  <div id="message-popup" class="hidden">Message delivered!</div>
+<div class="row">
     <div class="col-sm-12">
       <div class="single-contact-btn">
         <button type="submit" class="contact-btn">Send</button>
@@ -478,12 +471,21 @@ Currently, we cannot confidently recommend the inclusion of explicit value clari
 
 <script>
 function submitMessage(event) {
-  alert("Message delivered!"); // Optional: Keep the alert for now (remove later)
-  document.getElementById("message-popup").classList.remove("hidden");
+  alert("Message delivered!"); // Display "Message delivered!" popup
+  return true; // Allow form submission
+}
+</script>
+
+
+
+// <script>
+// function submitMessage(event) {
+  // alert("Message delivered!"); // Optional: Keep the alert for now (remove later)
+ //  document.getElementById("message-popup").classList.remove("hidden");
   // Optional: You can add a timeout to hide the popup after a few seconds
   // setTimeout(function() { document.getElementById("message-popup").classList.add("hidden"); }, 3000); // Hide after 3 seconds
-  event.preventDefault(); // Prevent default form submission
-}</script>
+ //  event.preventDefault(); // Prevent default form submission
+// }</script>
 
 
 
