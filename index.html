@@ -475,12 +475,14 @@ Currently, we cannot confidently recommend the inclusion of explicit value clari
 </form>
 
 <script>
-function submitMessage() {
+function submitMessage(event){
   alert("Message delivered!"); // Display "Message delivered!" popup
-  return true; // Allow form submission
-}
-</script>
+  event.preventDefault(); // Prevent default form submission
+}</script>
 
+
+
+	
 	
 </div><!--/.contact-form-->
 </div><!--/.single-contact-box-->
