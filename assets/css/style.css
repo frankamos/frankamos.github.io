@@ -180,6 +180,23 @@ nav.navbar.bootsnav .navbar-toggle {
 nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.navbar-toggle */
 
+/*-------------------------------------
+        3.  pop-up message
+--------------------------------------*/
+
+#message-popup {
+  /* Define styles for the popup, e.g., background color, text color, padding, etc. */
+  position: fixed; /* Make it appear fixed on the screen */
+  top: 50%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning as needed */
+  z-index: 10; /* Ensure it's displayed above other elements */
+  display: none; /* Initially hidden */
+}
+
+#message-popup.visible { /* Add a visible class for styling when shown */
+  display: block;
+}
 
 
 /*-------------------------------------
