@@ -475,8 +475,11 @@ Currently, we cannot confidently recommend the inclusion of explicit value clari
 </form>
 
 <script>
-function submitMessage(event){
-  alert("Message delivered!"); // Display "Message delivered!" popup
+function submitMessage(event) {
+  alert("Message delivered!"); // Optional: Keep the alert for now (remove later)
+  document.getElementById("message-popup").classList.remove("hidden");
+  // Optional: You can add a timeout to hide the popup after a few seconds
+  // setTimeout(function() { document.getElementById("message-popup").classList.add("hidden"); }, 3000); // Hide after 3 seconds
   event.preventDefault(); // Prevent default form submission
 }</script>
 
